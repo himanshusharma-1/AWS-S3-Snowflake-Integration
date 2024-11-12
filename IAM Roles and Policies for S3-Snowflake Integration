@@ -4,7 +4,7 @@
 3. Attach the **AmazonS3ReadOnlyAccess** policy (or create a custom policy if necessary).
 
 ## Step 2: Custom Policy Example
-Here's an example JSON policy for allowing Snowflake to read from S3:
+Here's an example JSON policy for allowing from S3:
 
 {
 	"Version": "2012-10-17",
