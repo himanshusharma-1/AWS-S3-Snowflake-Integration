@@ -1,0 +1,11 @@
+
+## Step 1: Create an S3 Bucket
+1. Go to the **S3** service in the AWS Management Console.
+2. Click **Create bucket** and provide a unique name.
+3. Choose a region and configure other options as needed.
+4. Once created, upload the data files you intend to load into Snowflake.
+
+## Step 2: Grant Access
+Make sure the IAM role created in `IAM_roles_policies.md` has the necessary permissions to access this bucket.
+
+
