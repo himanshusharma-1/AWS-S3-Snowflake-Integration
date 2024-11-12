@@ -1,0 +1,10 @@
+CREATE OR REPLACE STAGE my_s3_stage
+URL = 's3://demo-05112024/'
+STORAGE_INTEGRATION = aws_s3_integration
+FILE_FORMAT = CREATE OR REPLACE FILE FORMAT demo_format
+  TYPE = 'CSV'
+  FIELD_DELIMITER = ','  -- or update to the correct delimiter
+  SKIP_HEADER = 1
+  ERROR_ON_COLUMN_COUNT_MISMATCH = FALSE;
+
+-- Replace YOUR_BUCKET_NAME and YOUR_SNOWFLAKE_STORAGE_INTEGRATION with actual values.
