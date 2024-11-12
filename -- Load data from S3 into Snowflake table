@@ -1,0 +1,3 @@
+COPY INTO DEMO_HOTEL_TABLE
+FROM @demo_aws_stage/hotel_booking.csv
+FILE_FORMAT = (FORMAT_NAME = demo_format)
